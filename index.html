@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>Blood Bank</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="donor.html">Donor Registration</a></li>
+                <li><a href="availability.html">Blood Availability</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-slider">
+        <div class="slide active">
+            <img src="https://source.unsplash.com/1600x900/?hospital" alt="Hospital">
+            <div class="slide-content">
+                <h2>Save Lives</h2>
+                <p>Your donation matters</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://source.unsplash.com/1600x900/?doctor" alt="Doctor">
+            <div class="slide-content">
+                <h2>Professional Care</h2>
+                <p>Expert medical staff</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="https://source.unsplash.com/1600x900/?laboratory" alt="Laboratory">
+            <div class="slide-content">
+                <h2>Modern Facilities</h2>
+                <p>State-of-the-art equipment</p>
+            </div>
+        </div>
+        <button class="slider-btn prev">❮</button>
+        <button class="slider-btn next">❯</button>
+    </div>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Save Lives with Blood Donation</h1>
+            <p>Your donation can save up to 3 lives. Register as a donor today!</p>
+            <a href="donor.html" class="btn">Become a Donor</a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card" data-aos="fade-up">
+                <img src="https://source.unsplash.com/300x200/?emergency" alt="Emergency Service">
+                <h3>Emergency Service</h3>
+                <p>24/7 blood supply for emergencies</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://source.unsplash.com/300x200/?medical-lab" alt="Safe & Secure">
+                <h3>Safe & Secure</h3>
+                <p>All blood samples are thoroughly tested</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://source.unsplash.com/300x200/?doctor-team" alt="Expert Staff">
+                <h3>Expert Staff</h3>
+                <p>Professional medical team available</p>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <div class="stat-item">
+                <h3 id="donorCount">0</h3>
+                <p>Active Donors</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="bloodUnits">0</h3>
+                <p>Units Collected</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="livesSaved">0</h3>
+                <p>Lives Saved</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank Management System. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
